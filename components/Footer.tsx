@@ -52,6 +52,24 @@ const Footer = () => {
           </a>
         </div>
       </div>
+      <div className="flex-col-center gap-4">
+        <span>Il opère sur toutes les marques comme :</span>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          {' '}
+          <Link
+            href="/garage-citroen-bergerac"
+            className="hover:font-bold hover:text-primary duration-300 transition-all"
+          >
+            Citroën
+          </Link>
+          <Link
+            href="/garage-volkswagen-bergerac"
+            className="hover:font-bold hover:text-primary duration-300 transition-all"
+          >
+            Volkswagen
+          </Link>
+        </div>
+      </div>
       <Link
         href="/mentions-legales"
         rel="nofollow"
@@ -60,7 +78,7 @@ const Footer = () => {
         Mentions légales
       </Link>
       <p className="mx-auto text-center">
-        © {currentYear} Constructions Habitations 24. Tous droits réservés.
+        © {currentYear} L'Atelier de Jimmy. Tous droits réservés.
       </p>
       <p>
         Crée par{' '}

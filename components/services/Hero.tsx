@@ -44,7 +44,15 @@ const Hero = () => {
           Bergerac et des communes voisines. À l’Atelier de Jimmy, chaque
           intervention est réalisée avec rigueur, transparence et passion du
           métier, qu’il s’agisse d’un entretien régulier, d’un diagnostic précis
-          ou d’une réparation complète.
+          ou d’une réparation complète. Il opère sur tout type de véhicules
+          légers, aussi bien une{' '}
+          <Link href="/garage-citroen-bergerac" className="font-bold">
+            Citroën
+          </Link>{' '}
+          qu'une{' '}
+          <Link href="/garage-volkswagen-bergerac" className="font-bold">
+            Volkswagen
+          </Link>
         </p>
         <p className="description italic">
           “Professionnel, courtois, arrangeant et toujours à l’écoute” —
