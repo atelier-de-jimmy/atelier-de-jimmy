@@ -2,18 +2,16 @@
 import { whyUsHomepage } from '@/constants';
 import Image from 'next/image';
 import React from 'react';
-import { containerVariants, itemVariants } from '@/constants/motionVariants';
+import {
+  containerVariants,
+  itemVariants,
+  fadeInView,
+} from '@/constants/motionVariants';
 import { motion } from 'framer-motion';
 const WhyUs = () => {
   return (
     <section className="lg:max-w-7xl mx-auto px-[20px] section flex-col-center gap-8 bg-zinc-200/50 rounded-xl">
-      <motion.h2
-        className="sub-title"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true, amount: 0.15 }}
-      >
+      <motion.h2 className="sub-title" {...fadeInView}>
         Pourquoi choisir <br /> L’Atelier de Jimmy
       </motion.h2>
       {/* icons */}
@@ -31,7 +29,7 @@ const WhyUs = () => {
             variants={itemVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.2 }}
           >
             <Image
               src={icon}
