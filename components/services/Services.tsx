@@ -17,7 +17,7 @@ const Services = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.15 }}
+        viewport={{ once: true }}
       >
         {garageServicesPage.map(
           ({ title, text, quote, imgPath, emoji, classname }, index) => (
@@ -27,7 +27,7 @@ const Services = () => {
               variants={itemVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.1 }}
             >
               <Image
                 src={imgPath}
@@ -41,7 +41,7 @@ const Services = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true, amount: 0.2 }}
+                viewport={{ once: true, amount: 0.15 }}
               >
                 <span className="hidden lg:block lg:text-4xl">{emoji}</span>
                 <span className="sub-title">{title}</span>
@@ -51,7 +51,7 @@ const Services = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.7, delay: 0.25 }}
-                viewport={{ once: true, amount: 0.25 }}
+                viewport={{ once: true, amount: 0.15 }}
               >
                 {text}
               </motion.p>
@@ -60,7 +60,7 @@ const Services = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                viewport={{ once: true, amount: 0.2 }}
+                viewport={{ once: true, amount: 0.15 }}
               >
                 {quote}
               </motion.blockquote>
