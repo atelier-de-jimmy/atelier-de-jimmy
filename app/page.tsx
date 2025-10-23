@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL('https://atelier-de-jimmy.com/'),
   alternates: {
-    canonical: 'https://atelier-de-jimmy.com/',
+    canonical: '/',
   },
 
   robots: {

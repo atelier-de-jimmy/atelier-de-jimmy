@@ -1,5 +1,13 @@
 import React from 'react';
+import type { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Mentions légales – L’Atelier de Jimmy',
+  robots: {
+    index: false,
+    follow: true,
+  },
+};
 const page = () => {
   return (
     <main className="flex flex-col gap-6 p-6 max-w-3xl mx-auto text-gray-900 mt-30">

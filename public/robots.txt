@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+Disallow: /private/
+
+Sitemap: https://atelier-de-jimmy.com/sitemap.xml
+Host: atelier-de-jimmy.com

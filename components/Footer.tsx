@@ -72,7 +72,6 @@ const Footer = () => {
       </div>
       <Link
         href="/mentions-legales"
-        rel="nofollow"
         className="text-neutral-900 hover:text-primary transition-all duration-300 hover:font-bold"
       >
         Mentions légales
