@@ -1,3 +1,10 @@
+'use client';
+import { motion } from 'framer-motion';
+import {
+  containerVariants,
+  itemVariants,
+  fadeInView,
+} from '@/constants/motionVariants';
 import { brands } from '@/constants';
 import { cn } from '@/lib/utils';
 import React from 'react';
@@ -33,8 +40,10 @@ const BrandsCard = ({ name, imgPath }: { name: string; imgPath: string }) => {
 const Brands = () => {
   return (
     <section className="container section flex-col-center gap-8">
-      <h2 className="sub-title">Marques pris prends en charge</h2>
-      <p className="description">
+      <motion.h2 className="sub-title" {...fadeInView}>
+        Marques pris prends en charge
+      </motion.h2>
+      <motion.p className="description" {...fadeInView}>
         Votre garage automobile à Bergerac assure l’entretien et la réparation
         de toutes marques de véhicules, que ce soit une{' '}
         <Link href="/garage-citroen-bergerac" className="font-bold">
@@ -47,9 +56,12 @@ const Brands = () => {
         . Grâce à son expérience et à un matériel de diagnostic multi-marques,
         l’Atelier de Jimmy intervient aussi bien sur des voitures françaises que
         étrangères, anciennes ou récentes.
-      </p>
+      </motion.p>
       {/* brands */}
-      <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+      <motion.div
+        className="relative flex w-full flex-col items-center justify-center overflow-hidden"
+        {...fadeInView}
+      >
         <Marquee pauseOnHover className="[--duration:60s]">
           {firstRow.map((review) => (
             <BrandsCard key={review.name} {...review} />
@@ -57,14 +69,17 @@ const Brands = () => {
         </Marquee>{' '}
         <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-[#f5f5f5]" />
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-[#f5f5f5]" />
-      </div>
+      </motion.div>
 
       {/* warning */}
-      <p className="text-sm italic text-center max-w-2xl text-neutral-700">
+      <motion.p
+        className="text-sm italic text-center max-w-2xl text-neutral-700"
+        {...fadeInView}
+      >
         Les marques citées et leurs logos sont la propriété de leurs détenteurs
         respectifs. L’Atelier de Jimmy est un garage indépendant, non affilié
         aux constructeurs automobiles.
-      </p>
+      </motion.p>
     </section>
   );
 };

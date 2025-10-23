@@ -1,4 +1,10 @@
 'use client';
+import { motion } from 'framer-motion';
+import {
+  containerVariants,
+  itemVariants,
+  fadeInView,
+} from '@/constants/motionVariants';
 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -35,7 +41,10 @@ export default function LeafletMap() {
     L.Marker.prototype.options.icon = DefaultIcon;
   }, []);
   return (
-    <section className="container section flex-col-center gap-8">
+    <motion.section
+      className="container section flex-col-center gap-8"
+      {...fadeInView}
+    >
       <h2 className="sub-title">Trouver votre garagiste à Bergerac</h2>
 
       <MapContainer
@@ -55,6 +64,6 @@ export default function LeafletMap() {
           <Popup>L'Atelier de Jimmy</Popup>
         </Marker>
       </MapContainer>
-    </section>
+    </motion.section>
   );
 }
