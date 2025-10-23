@@ -14,8 +14,8 @@ interface LabelInputContainerProps {
 }
 
 interface FormData {
-  firstname: string;
-  lastname: string;
+  prenom: string;
+  nom: string;
   email: string;
   message: string;
 }
@@ -42,7 +42,7 @@ const Contact = () => {
 
     try {
       const formData = new FormData(formRef.current!);
-      const response = await fetch('https://formspree.io/f/myzggwzz', {
+      const response = await fetch('https://formspree.io/f/xpwyvwkl', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
@@ -118,20 +118,20 @@ const Contact = () => {
           <form ref={formRef} className="my-8" onSubmit={handleSubmit}>
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
               <LabelInputContainer>
-                <Label htmlFor="firstname">Nom</Label>
+                <Label htmlFor="prenom">Nom</Label>
                 <Input
-                  id="firstname"
-                  name="firstname"
+                  id="prenom"
+                  name="prenom"
                   placeholder="Nom"
                   type="text"
                   required
                 />
               </LabelInputContainer>
               <LabelInputContainer>
-                <Label htmlFor="lastname">Prénom</Label>
+                <Label htmlFor="nom">Prénom</Label>
                 <Input
-                  id="lastname"
-                  name="lastname"
+                  id="nom"
+                  name="nom"
                   placeholder="Prénom"
                   type="text"
                   required
