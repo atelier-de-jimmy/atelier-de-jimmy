@@ -73,7 +73,7 @@ const faqStructuredData = {
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <LocalStructuredData />
       <StructuredDataScript data={faqStructuredData} id="faq-jsonld" />
       <Hero />

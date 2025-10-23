@@ -10,7 +10,7 @@ export const containerVariants: Variants = {
 };
 
 export const itemVariants: Variants = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 10 },
   visible: {
     opacity: 1,
     y: 0,
