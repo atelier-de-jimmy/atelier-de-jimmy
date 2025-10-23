@@ -13,7 +13,7 @@ const Services = () => {
   return (
     <section className="container section">
       <motion.ul
-        className="flex-col-center gap-24"
+        className="flex-col-center lg:gap-12"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -27,7 +27,7 @@ const Services = () => {
               variants={itemVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true }}
             >
               <Image
                 src={imgPath}
@@ -64,7 +64,7 @@ const Services = () => {
               >
                 {quote}
               </motion.blockquote>
-              <div className="border-t border-dotted border-zinc-400 max-w-4xl my-10 mx-auto w-full" />
+              <div className="border-t border-dotted border-zinc-400 max-w-4xl my-6 lg:my-10 mx-auto w-full" />
             </motion.li>
           )
         )}

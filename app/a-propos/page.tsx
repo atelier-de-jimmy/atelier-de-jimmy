@@ -52,7 +52,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Hero />
       <Presentation />
       <Values />

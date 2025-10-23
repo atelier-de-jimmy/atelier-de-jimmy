@@ -29,7 +29,7 @@ const Services = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.15 }}
+        viewport={{ once: true, amount: 0.1 }}
       >
         {servicesHomepage.map(({ title, text, imgPath }, index) => (
           <motion.li
@@ -38,7 +38,7 @@ const Services = () => {
             variants={itemVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.1 }}
           >
             <Image
               src={imgPath}
