@@ -50,7 +50,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
-
+  formatDetection: {
+    telephone: true,
+    email: true,
+  },
   robots: {
     index: true,
     follow: true,

@@ -223,3 +223,6 @@
     @apply bg-[#f5f5f5];
   }
 }
+.leaflet-container {
+  z-index: 0 !important;
+}

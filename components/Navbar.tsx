@@ -57,7 +57,7 @@ const Navbar = () => {
               className="rounded-lg"
             />
           </Link>
-          <a href="tel:0617122321" className="font-bold cursor-pointer">
+          <a href="tel:0670942802" className="font-bold cursor-pointer">
             📞 06 70 94 28 02
           </a>
 

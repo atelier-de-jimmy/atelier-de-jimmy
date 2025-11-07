@@ -1,6 +1,3 @@
-'use client';
-import { motion } from 'framer-motion';
-import { fadeInView } from '@/constants/motionVariants';
 import Link from 'next/link';
 import { CiMail } from 'react-icons/ci';
 import { MdOutlineSmartphone } from 'react-icons/md';
@@ -12,10 +9,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <motion.footer
-      className="container h-full section flex flex-col items-center justify-center gap-6"
-      {...fadeInView}
-    >
+    <footer className="container h-full section flex flex-col items-center justify-center gap-6">
       <Link href="/" className="text-center mx-auto">
         <Image
           src="/card.jpg"
@@ -49,11 +43,11 @@ const Footer = () => {
         </p>
         <div className="flex gap-4 items-center justify-center">
           <MdOutlineSmartphone />
-          <a href="tel:0617122321">{businessInfo.phone}</a>
+          <a href="tel:0670942802">{businessInfo.phone}</a>
         </div>
         <div className="flex gap-4 items-center justify-center ">
           <CiMail />
-          <a href="mailto:mustaphatouay@hotmail.com" className="">
+          <a href="mailto:jimmyfeltmann24@gmail.com" className="">
             jimmyfeltmann24@gmail.com
           </a>
         </div>
@@ -95,7 +89,7 @@ const Footer = () => {
           Pulsar Pixel
         </a>
       </p>
-    </motion.footer>
+    </footer>
   );
 };
 

@@ -3,7 +3,6 @@ import React, { useState, useRef } from 'react';
 import { Label } from '@/components/ui/Label';
 import { Input } from '@/components/ui/Input';
 import { cn } from '@/lib/utils';
-import { motion } from 'motion/react';
 import { CiMail } from 'react-icons/ci';
 import { MdOutlineSmartphone } from 'react-icons/md';
 
@@ -82,25 +81,19 @@ const Contact = () => {
 
   return (
     <section className="section container" id="contact">
-      <motion.div
-        className="max-w-2xl mx-auto p-4 md:p-8 shadow-input bg-[#f5f5f5] flex flex-col gap-8"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-      >
+      <div className="max-w-2xl mx-auto p-4 md:p-8 shadow-input bg-[#f5f5f5] flex flex-col gap-8">
         <h2 className="sub-title w-full">Contactez votre garagiste</h2>
 
         <div className="flex flex-col gap-2 justify-around w-full">
           <div className="flex gap-4 items-center justify-center ">
             <CiMail />
-            <a href="mailto:mustaphatouay@hotmail.com" className="">
+            <a href="mailto:jimmyfeltmann24@gmail.com" className="">
               jimmyfeltmann24@gmail.com
             </a>
           </div>
           <div className="flex gap-4 items-center justify-center">
             <MdOutlineSmartphone />
-            <a href="tel:0617122321">06 70 94 28 02</a>
+            <a href="tel:0670942802">06 70 94 28 02</a>
           </div>
         </div>
 
@@ -168,7 +161,7 @@ const Contact = () => {
             </button>
           </form>
         )}
-      </motion.div>
+      </div>
     </section>
   );
 };
