@@ -31,7 +31,6 @@ const Footer = () => {
           </Link>
         ))}
       </div>
-      {/* legals */}
 
       <div className="flex flex-col items-center gap-2 justify-around w-full">
         <p className="text-primary">
@@ -70,6 +69,8 @@ const Footer = () => {
           </Link>
         </div>
       </div>
+
+      {/* legals */}
       <Link
         href="/mentions-legales"
         className="text-neutral-900 hover:text-primary transition-all duration-300 hover:font-bold"
